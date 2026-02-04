@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four - Real-time Multiplayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Connect Four</h1>
+        
+        
+        <div id="loginSection" class="section">
+            <h2>Enter Your Username</h2>
+            <input type="text" id="usernameInput" placeholder="Username" maxlength="20">
+            <button id="joinButton">Join Game</button>
+        </div>
+
+   
+        <div id="gameSection" class="section hidden">
+            <div class="game-info">
+                <div class="player-info">
+                    <div class="player">
+                        <span id="player1Name">Player 1</span>
+                        <span class="indicator" id="player1Indicator">●</span>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="player">
+                        <span id="player2Name">Player 2</span>
+                        <span class="indicator" id="player2Indicator">●</span>
+                    </div>
+                </div>
+                <div class="status" id="gameStatus">Waiting for opponent...</div>
+            </div>
+
+            <div class="board-container">
+                <div id="board" class="board"></div>
+            </div>
+
+            <div class="controls">
+                <button id="newGameButton" class="hidden">New Game</button>
+                <button id="leaderboardButton">View Leaderboard</button>
+            </div>
+        </div>
+
+        
+        <div id="leaderboardSection" class="section hidden">
+            <h2>Leaderboard</h2>
+            <div id="leaderboardContent"></div>
+            <button id="closeLeaderboardButton">Close</button>
+        </div>
+
+        
+        <div id="message" class="message hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
