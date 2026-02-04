@@ -1,4 +1,4 @@
-# Connect Four – Real-Time Multiplayer Game
+# Connect Four – Real-Time - Game
 
 This project is a complete implementation of a real-time multiplayer Connect Four (4 in a Row) game built as part of a Backend Engineering assignment. The focus of this project is on real-time communication, backend correctness, and clean system design, with a simple frontend for interaction.
 
@@ -182,3 +182,4 @@ Analytics processing is decoupled from the gameplay logic.
 ## License
 
 This project is provided as-is for technical assessment purposes.
+
